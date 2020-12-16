@@ -1,3 +1,4 @@
+# taking in user inputs
 optional_name = input('name of person you know at company, leave blank if none: '.upper())
 print()
 company_name = input('company name: '.upper())
@@ -15,13 +16,15 @@ print()
 what_it_does = input('WHAT YOUR PROJECT DOES IN DETAIL (write a lot here): ')
 
 
-
+# checking is cover letter specifys a certain person or not
 
 if optional_name == '':
     one = 'To the recruiting team at ' + company_name + ','
 else:
     one = 'To ' + optional_name + ' and the recruiting team at ' + company_name + ','
 
+
+# building cover letter line by line
 
 two = 'The ' + job_title + ' role at ' + company_name + ' is a perfect fit for me.'
 
@@ -48,8 +51,10 @@ thirteen = 'Website: ​https://www.hurshkarkhanis.com/'
 fourteen = 'Email: ​karkhanis.hursh@gmail.com'
 
 
+# putting each string into a list
 lines = [one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen, fourteen]
 
+# printing line by line, will format later.
 for line in lines:
     print(line)
     print('\n')
